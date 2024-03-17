@@ -1,0 +1,783 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Sudoku Solver !'
+  ClientHeight = 412
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 80
+    Position.X = 96.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 76
+    Position.X = 129.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 66
+    Position.X = 162.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 77
+    Position.X = 200.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit5: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 71
+    Position.X = 233.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit6: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 53
+    Position.X = 266.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit7: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 70
+    Position.X = 304.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit8: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 54
+    Position.X = 337.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit9: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 29
+    Position.X = 370.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit10: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 78
+    Position.X = 96.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit11: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 73
+    Position.X = 129.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit12: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 60
+    Position.X = 162.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit13: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 72
+    Position.X = 200.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit14: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 67
+    Position.X = 233.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit15: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 32
+    Position.X = 266.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit16: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 59
+    Position.X = 304.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit17: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 43
+    Position.X = 337.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit18: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Position.X = 370.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit19: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 61
+    Position.X = 96.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit20: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 57
+    Position.X = 129.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit21: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 40
+    Position.X = 162.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit22: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 56
+    Position.X = 200.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit23: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 45
+    Position.X = 233.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit24: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    Position.X = 266.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit25: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 34
+    Position.X = 304.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit26: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    Position.X = 337.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit27: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 370.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit28: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 79
+    Position.X = 96.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit29: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 75
+    Position.X = 129.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit30: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 63
+    Position.X = 162.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit31: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 74
+    Position.X = 200.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit32: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 68
+    Position.X = 233.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit33: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 46
+    Position.X = 266.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit34: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 64
+    Position.X = 304.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit35: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 49
+    Position.X = 337.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit36: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 21
+    Position.X = 370.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit37: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 69
+    Position.X = 96.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit38: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 65
+    Position.X = 129.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit39: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 55
+    Position.X = 162.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit40: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 62
+    Position.X = 200.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit41: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 58
+    Position.X = 233.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit42: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 26
+    Position.X = 266.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit43: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 51
+    Position.X = 304.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit44: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 33
+    Position.X = 337.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit45: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 370.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit46: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 50
+    Position.X = 96.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit47: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 44
+    Position.X = 129.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit48: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 27
+    Position.X = 162.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit49: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 39
+    Position.X = 200.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit50: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 30
+    Position.X = 233.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit51: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 266.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit52: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 19
+    Position.X = 304.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit53: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 337.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit54: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 370.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit55: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 52
+    Position.X = 96.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit56: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 48
+    Position.X = 129.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit57: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 36
+    Position.X = 162.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit58: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 47
+    Position.X = 200.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit59: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 41
+    Position.X = 233.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit60: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 22
+    Position.X = 266.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit61: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 37
+    Position.X = 304.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit62: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 23
+    Position.X = 337.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit63: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 370.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit64: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 42
+    Position.X = 96.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit65: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 38
+    Position.X = 129.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit66: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 28
+    Position.X = 162.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit67: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 35
+    Position.X = 200.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit68: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 31
+    Position.X = 233.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit69: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Position.X = 266.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit70: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 25
+    Position.X = 304.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit71: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 337.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit72: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 370.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit73: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 24
+    Position.X = 96.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit74: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 20
+    Position.X = 129.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit75: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 162.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit76: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 200.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit77: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Position.X = 233.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit78: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 266.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit79: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 304.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit80: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 337.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit81: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 370.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SolveButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 456.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 82.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 81
+    Text = 'Solve!'
+    TextSettings.Font.Family = 'Showcard Gothic'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = SolveButtonClick
+  end
+  object resetButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 472.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 82
+    Text = 'Reset'
+    TextSettings.Font.Family = 'Segoe Script'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = resetButtonClick
+  end
+  object msg: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 299.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Trimming = None
+    Text = 'Status'
+    TabOrder = 83
+  end
+end
